@@ -1,7 +1,7 @@
 docker-git-ftp
 ==============
 
-A minimal Alpine Linux docker image with the latest
+A Jessie node Linux docker image with the latest
 [git-ftp](https://github.com/git-ftp/git-ftp) suited for automated deployments
 via Continuous Delivery systems like GitLab Pipelines.
 
@@ -15,7 +15,7 @@ Example `.gitlab-ci.yml` configuration:
 
 ```yml
 deploy_production:
-  image: dotsunited/git-ftp
+  image: elbabass/git-ftp
   stage: deploy
   environment:
     name: production
